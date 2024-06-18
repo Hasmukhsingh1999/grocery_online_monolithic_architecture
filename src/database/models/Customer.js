@@ -22,7 +22,7 @@ const customerSchema = new mongoose.Schema(
         },
       },
     ],
-    whishlist: [
+    wishlist: [
       {
         type: mongoose.Schema.Types.ObjectId,
         required: true,
