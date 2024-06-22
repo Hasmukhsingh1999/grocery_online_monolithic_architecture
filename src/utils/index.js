@@ -10,7 +10,7 @@ module.exports.GeneratePassword = async () => {
   return bcrypt.hash(password, salt);
 };
 
-module.exports.ValidPassword = async (enteredPassword, savedPassword, salt) => {
+module.exports.ValidatePassword = async (enteredPassword, savedPassword, salt) => {
   return (await this.GeneratePassword(enteredPassword, salt)) === savedPassword;
 };
 
